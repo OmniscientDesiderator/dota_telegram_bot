@@ -1,0 +1,3 @@
+TOKEN='YOUR TELEGRAM BOT TOKEN'
+
+PLAYER_PAGES = ['Матчи', 'Герои']

@@ -1,0 +1,8 @@
+version: '1.0'
+
+services:
+  telegram_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
