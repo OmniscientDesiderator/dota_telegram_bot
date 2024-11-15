@@ -23,7 +23,7 @@ To get started with this project, follow the steps below to clone the repository
 
   
 First, clone the repository to your local machine using the following command:
-#### `https://github.com/OmniscientDesiderator/dota_telegram_bot.git`
+#### `git clone https://github.com/OmniscientDesiderator/dota_telegram_bot.git`
 
   
 
