@@ -29,9 +29,9 @@ First, clone the repository to your local machine using the following command:
 
   
 
-### Step 2: Configure Your Telegram Bot Token
+### Step 2: Configure Your Tokens
 
- Navigate to the `/app` directory and open the `config.py` file. You will need to insert your Telegram bot token into this file. Look for the line that specifies the token and replace it with your own:
+ Navigate to the `/app` directory and open the `config.py` file. You will need to insert your **Telegram bot** and **Steam** token into this file. Look for the line that specifies the token and replace it with your own:
   
   
 
@@ -60,6 +60,8 @@ First, clone the repository to your local machine using the following command:
   
 
 - [OpenDota API](https://docs.opendota.com/)
+
+- [Steam API](https://steamcommunity.com/dev)
 
   
 

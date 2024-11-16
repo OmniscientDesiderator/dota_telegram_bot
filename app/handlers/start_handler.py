@@ -1,12 +1,7 @@
-from aiogram import F, Router
+from aiogram import Router
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
-from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
-from aiogram.types import CallbackQuery
-
-from keyboards.player_menu import MyCallback
-import keyboards.player_menu as kb
 
 router = Router()
 
@@ -19,3 +14,11 @@ async def cmd_start(message: Message):
 @router.message(Command('help'))
 async def show_player(message: Message, state: FSMContext):
     await message.answer('Существующие команды:\n\n/show_player - отображение игрока по Steam ID (информация об аккаунте, последние матчи, герои)\n/show_match - отображение матча по номеру')
+
+@router.message(Command('stick'))
+async def show_player(message: Message, state: FSMContext):
+    # sticker_id = '5314670335402993551'
+    # await message.answer_sticker(sticker=sticker_id)
+    await message.answer('Текст проверка', parse_mode="HTML")
+
+    #  <custom-emoji-element class="custom-emoji media-sticker-wrapper" data-doc-id="5307962876386885388" data-sticker-emoji="👰‍♀️"></custom-emoji-element>
