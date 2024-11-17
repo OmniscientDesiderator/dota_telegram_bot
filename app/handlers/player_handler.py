@@ -5,8 +5,6 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 import logging
-import re
-import requests
 from config import STEAM_TOKEN
 
 from keyboards.player_menu import MyCallback

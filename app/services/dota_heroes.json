@@ -5,6 +5,7 @@
         "localized_name": "Anti-Mage",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/antimage_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -18,6 +19,7 @@
         "localized_name": "Axe",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/axe_horz.png",
         "roles": [
             "Initiator",
             "Durable",
@@ -32,6 +34,7 @@
         "localized_name": "Bane",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/bane_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -46,6 +49,7 @@
         "localized_name": "Bloodseeker",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/bloodseeker_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -60,6 +64,7 @@
         "localized_name": "Crystal Maiden",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/crystal_maiden_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -73,6 +78,7 @@
         "localized_name": "Drow Ranger",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/drow_ranger_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -86,6 +92,7 @@
         "localized_name": "Earthshaker",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/earthshaker_horz.png",
         "roles": [
             "Support",
             "Initiator",
@@ -100,6 +107,7 @@
         "localized_name": "Juggernaut",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/juggernaut_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -113,6 +121,7 @@
         "localized_name": "Mirana",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/mirana_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -128,6 +137,7 @@
         "localized_name": "Morphling",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/morphling_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -143,6 +153,7 @@
         "localized_name": "Shadow Fiend",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/nevermore_horz.png",
         "roles": [
             "Carry",
             "Nuker"
@@ -155,6 +166,7 @@
         "localized_name": "Phantom Lancer",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/phantom_assassin_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -169,6 +181,7 @@
         "localized_name": "Puck",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/puck_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -183,6 +196,7 @@
         "localized_name": "Pudge",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/pudge_horz.png",
         "roles": [
             "Disabler",
             "Initiator",
@@ -197,6 +211,7 @@
         "localized_name": "Razor",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/razor_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -211,6 +226,7 @@
         "localized_name": "Sand King",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/sand_king_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -226,6 +242,7 @@
         "localized_name": "Storm Spirit",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/storm_spirit_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -241,6 +258,7 @@
         "localized_name": "Sven",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/sven_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -256,6 +274,7 @@
         "localized_name": "Tiny",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/tiny_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -272,6 +291,7 @@
         "localized_name": "Vengeful Spirit",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/vengefulspirit_horz.png",
         "roles": [
             "Support",
             "Initiator",
@@ -287,6 +307,7 @@
         "localized_name": "Windranger",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/windrunner_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -302,6 +323,7 @@
         "localized_name": "Zeus",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/zuus_horz.png",
         "roles": [
             "Nuker",
             "Carry"
@@ -314,6 +336,7 @@
         "localized_name": "Kunkka",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/kunkka_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -330,6 +353,7 @@
         "localized_name": "Lina",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/lina_horz.png",
         "roles": [
             "Support",
             "Carry",
@@ -344,6 +368,7 @@
         "localized_name": "Lion",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/lion_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -358,6 +383,7 @@
         "localized_name": "Shadow Shaman",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/shadow_shaman_horz.png",
         "roles": [
             "Support",
             "Pusher",
@@ -373,6 +399,7 @@
         "localized_name": "Slardar",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/slardar_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -388,6 +415,7 @@
         "localized_name": "Tidehunter",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/tidehunter_horz.png",
         "roles": [
             "Initiator",
             "Durable",
@@ -403,6 +431,7 @@
         "localized_name": "Witch Doctor",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/witch_doctor_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -416,6 +445,7 @@
         "localized_name": "Lich",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/lich_horz.png",
         "roles": [
             "Support",
             "Nuker"
@@ -428,6 +458,7 @@
         "localized_name": "Riki",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/riki_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -441,6 +472,7 @@
         "localized_name": "Enigma",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/enigma_horz.png",
         "roles": [
             "Disabler",
             "Initiator",
@@ -454,6 +486,7 @@
         "localized_name": "Tinker",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/tinker_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -467,6 +500,7 @@
         "localized_name": "Sniper",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/sniper_horz.png",
         "roles": [
             "Carry",
             "Nuker"
@@ -479,6 +513,7 @@
         "localized_name": "Necrophos",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/necrolyte_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -493,6 +528,7 @@
         "localized_name": "Warlock",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/warlock_horz.png",
         "roles": [
             "Support",
             "Initiator",
@@ -506,6 +542,7 @@
         "localized_name": "Beastmaster",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/beastmaster_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -520,6 +557,7 @@
         "localized_name": "Queen of Pain",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/queenofpain_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -533,6 +571,7 @@
         "localized_name": "Venomancer",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/venomancer_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -548,6 +587,7 @@
         "localized_name": "Faceless Void",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/faceless_void_horz.png",
         "roles": [
             "Carry",
             "Initiator",
@@ -563,6 +603,7 @@
         "localized_name": "Wraith King",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/skeleton_king_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -578,6 +619,7 @@
         "localized_name": "Death Prophet",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/death_prophet_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -592,6 +634,7 @@
         "localized_name": "Phantom Assassin",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/phantom_assassin_horz.png",
         "roles": [
             "Carry",
             "Escape"
@@ -604,6 +647,7 @@
         "localized_name": "Pugna",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/pugna_horz.png",
         "roles": [
             "Nuker",
             "Pusher"
@@ -616,6 +660,7 @@
         "localized_name": "Templar Assassin",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/templar_assassin_horz.png",
         "roles": [
             "Carry",
             "Escape"
@@ -628,6 +673,7 @@
         "localized_name": "Viper",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/viper_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -642,6 +688,7 @@
         "localized_name": "Luna",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/luna_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -655,6 +702,7 @@
         "localized_name": "Dragon Knight",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/dragon_knight_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -671,6 +719,7 @@
         "localized_name": "Dazzle",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/dazzle_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -684,6 +733,7 @@
         "localized_name": "Clockwerk",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/rattletrap_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -698,6 +748,7 @@
         "localized_name": "Leshrac",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/leshrac_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -713,6 +764,7 @@
         "localized_name": "Nature's Prophet",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/furion_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -727,6 +779,7 @@
         "localized_name": "Lifestealer",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/life_stealer_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -741,6 +794,7 @@
         "localized_name": "Dark Seer",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/dark_seer_horz.png",
         "roles": [
             "Initiator",
             "Escape",
@@ -754,6 +808,7 @@
         "localized_name": "Clinkz",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/clinkz_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -767,6 +822,7 @@
         "localized_name": "Omniknight",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/omniknight_horz.png",
         "roles": [
             "Support",
             "Durable",
@@ -780,6 +836,7 @@
         "localized_name": "Enchantress",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/enchantress_horz.png",
         "roles": [
             "Support",
             "Pusher",
@@ -794,6 +851,7 @@
         "localized_name": "Huskar",
         "primary_attr": "str",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/huskar_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -807,6 +865,7 @@
         "localized_name": "Night Stalker",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/night_stalker_horz.png",
         "roles": [
             "Carry",
             "Initiator",
@@ -822,6 +881,7 @@
         "localized_name": "Broodmother",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/broodmother_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -836,6 +896,7 @@
         "localized_name": "Bounty Hunter",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/bounty_hunter_horz.png",
         "roles": [
             "Escape",
             "Nuker"
@@ -848,6 +909,7 @@
         "localized_name": "Weaver",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/weaver_horz.png",
         "roles": [
             "Carry",
             "Escape"
@@ -860,6 +922,7 @@
         "localized_name": "Jakiro",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/jakiro_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -874,6 +937,7 @@
         "localized_name": "Batrider",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/batrider_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -887,6 +951,7 @@
         "localized_name": "Chen",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/chen_horz.png",
         "roles": [
             "Support",
             "Pusher"
@@ -899,6 +964,7 @@
         "localized_name": "Spectre",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/spectre_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -912,6 +978,7 @@
         "localized_name": "Ancient Apparition",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/ancient_apparition_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -925,6 +992,7 @@
         "localized_name": "Doom",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/doom_bringer_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -940,6 +1008,7 @@
         "localized_name": "Ursa",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/ursa_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -953,6 +1022,7 @@
         "localized_name": "Spirit Breaker",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/spirit_breaker_horz.png",
         "roles": [
             "Carry",
             "Initiator",
@@ -968,6 +1038,7 @@
         "localized_name": "Gyrocopter",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/gyrocopter_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -981,6 +1052,7 @@
         "localized_name": "Alchemist",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/alchemist_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -997,6 +1069,7 @@
         "localized_name": "Invoker",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/invoker_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -1012,6 +1085,7 @@
         "localized_name": "Silencer",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/silencer_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -1027,6 +1101,7 @@
         "localized_name": "Outworld Destroyer",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/obsidian_destroyer_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -1040,6 +1115,7 @@
         "localized_name": "Lycan",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/lycan_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -1054,6 +1130,7 @@
         "localized_name": "Brewmaster",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/brewmaster_horz.png",
         "roles": [
             "Carry",
             "Initiator",
@@ -1069,6 +1146,7 @@
         "localized_name": "Shadow Demon",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/shadow_demon_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -1083,6 +1161,7 @@
         "localized_name": "Lone Druid",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/lone_druid_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -1096,6 +1175,7 @@
         "localized_name": "Chaos Knight",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/chaos_knight_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -1111,6 +1191,7 @@
         "localized_name": "Meepo",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/meepo_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -1127,6 +1208,7 @@
         "localized_name": "Treant Protector",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/treant_horz.png",
         "roles": [
             "Support",
             "Initiator",
@@ -1142,6 +1224,7 @@
         "localized_name": "Ogre Magi",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/ogre_magi_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1157,6 +1240,7 @@
         "localized_name": "Undying",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/undying_horz.png",
         "roles": [
             "Support",
             "Durable",
@@ -1171,6 +1255,7 @@
         "localized_name": "Rubick",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/rubick_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -1184,6 +1269,7 @@
         "localized_name": "Disruptor",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/disruptor_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -1198,6 +1284,7 @@
         "localized_name": "Nyx Assassin",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/nyx_assassin_horz.png",
         "roles": [
             "Disabler",
             "Nuker",
@@ -1212,6 +1299,7 @@
         "localized_name": "Naga Siren",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/naga_siren_horz.png",
         "roles": [
             "Carry",
             "Support",
@@ -1228,6 +1316,7 @@
         "localized_name": "Keeper of the Light",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/keeper_of_the_light_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1241,6 +1330,7 @@
         "localized_name": "Io",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/wisp_horz.png",
         "roles": [
             "Support",
             "Escape",
@@ -1254,6 +1344,7 @@
         "localized_name": "Visage",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/visage_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1269,6 +1360,7 @@
         "localized_name": "Slark",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/slark_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -1283,6 +1375,7 @@
         "localized_name": "Medusa",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/medusa_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -1296,6 +1389,7 @@
         "localized_name": "Troll Warlord",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/troll_warlord_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -1310,6 +1404,7 @@
         "localized_name": "Centaur Warrunner",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/centaur_horz.png",
         "roles": [
             "Durable",
             "Initiator",
@@ -1325,6 +1420,7 @@
         "localized_name": "Magnus",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/magnataur_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -1339,6 +1435,7 @@
         "localized_name": "Timbersaw",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/shredder_horz.png",
         "roles": [
             "Nuker",
             "Durable",
@@ -1352,6 +1449,7 @@
         "localized_name": "Bristleback",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/bristleback_horz.png",
         "roles": [
             "Carry",
             "Durable",
@@ -1366,6 +1464,7 @@
         "localized_name": "Tusk",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/tusk_horz.png",
         "roles": [
             "Initiator",
             "Disabler",
@@ -1379,6 +1478,7 @@
         "localized_name": "Skywrath Mage",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/skywrath_mage_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1392,6 +1492,7 @@
         "localized_name": "Abaddon",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/abaddon_horz.png",
         "roles": [
             "Support",
             "Carry",
@@ -1419,6 +1520,7 @@
         "localized_name": "Legion Commander",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/legion_commander_horz.png",
         "roles": [
             "Carry",
             "Disabler",
@@ -1434,6 +1536,7 @@
         "localized_name": "Techies",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/techies_horz.png",
         "roles": [
             "Nuker",
             "Disabler"
@@ -1446,6 +1549,7 @@
         "localized_name": "Ember Spirit",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/ember_spirit_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -1461,6 +1565,7 @@
         "localized_name": "Earth Spirit",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/earth_spirit_horz.png",
         "roles": [
             "Nuker",
             "Escape",
@@ -1476,6 +1581,7 @@
         "localized_name": "Underlord",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/abyssal_underlord_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1491,6 +1597,7 @@
         "localized_name": "Terrorblade",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/terrorblade_horz.png",
         "roles": [
             "Carry",
             "Pusher",
@@ -1504,6 +1611,7 @@
         "localized_name": "Phoenix",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/phoenix_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1519,6 +1627,7 @@
         "localized_name": "Oracle",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/oracle_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1533,6 +1642,7 @@
         "localized_name": "Winter Wyvern",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/winter_wyvern_horz.png",
         "roles": [
             "Support",
             "Disabler",
@@ -1546,6 +1656,7 @@
         "localized_name": "Arc Warden",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/arc_warden_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -1559,6 +1670,7 @@
         "localized_name": "Monkey King",
         "primary_attr": "agi",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/monkey_king_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -1573,6 +1685,7 @@
         "localized_name": "Dark Willow",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/dark_willow_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1587,6 +1700,7 @@
         "localized_name": "Pangolier",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/pangolier_horz.png",
         "roles": [
             "Carry",
             "Nuker",
@@ -1603,6 +1717,7 @@
         "localized_name": "Grimstroke",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/grimstroke_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1617,6 +1732,7 @@
         "localized_name": "Hoodwink",
         "primary_attr": "agi",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/hoodwink_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1631,6 +1747,7 @@
         "localized_name": "Void Spirit",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/void_spirit_horz.png",
         "roles": [
             "Carry",
             "Escape",
@@ -1645,6 +1762,7 @@
         "localized_name": "Snapfire",
         "primary_attr": "all",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/snapfire_horz.png",
         "roles": [
             "Support",
             "Nuker",
@@ -1659,6 +1777,7 @@
         "localized_name": "Mars",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/mars_horz.png",
         "roles": [
             "Carry",
             "Initiator",
@@ -1673,6 +1792,7 @@
         "localized_name": "Dawnbreaker",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/dawnbreaker_horz.png",
         "roles": [
             "Carry",
             "Durable"
@@ -1685,6 +1805,7 @@
         "localized_name": "Marci",
         "primary_attr": "all",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/marci_horz.png",
         "roles": [
             "Support",
             "Carry",
@@ -1700,6 +1821,7 @@
         "localized_name": "Primal Beast",
         "primary_attr": "str",
         "attack_type": "Melee",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/primal_beast_horz.png",
         "roles": [
             "Initiator",
             "Durable",
@@ -1713,6 +1835,35 @@
         "localized_name": "Muerta",
         "primary_attr": "int",
         "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/muerta_horz.png",
+        "roles": [
+            "Carry",
+            "Nuker",
+            "Disabler"
+        ],
+        "legs": 2
+    },
+    {
+        "id": 131,
+        "name": "npc_dota_hero_ringmaster",
+        "localized_name": "Ringmaster",
+        "primary_attr": "int",
+        "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/ringmaster_horz.png",
+        "roles": [
+            "Support",
+            "Nuker",
+            "Disabler"
+        ],
+        "legs": 2
+    },
+    {
+        "id": 145,
+        "name": "npc_dota_hero_kez",
+        "localized_name": "Kez",
+        "primary_attr": "int",
+        "attack_type": "Ranged",
+        "imageSrc": "https://cdn.stratz.com/images/dota2/heroes/kez_horz.png",
         "roles": [
             "Carry",
             "Nuker",

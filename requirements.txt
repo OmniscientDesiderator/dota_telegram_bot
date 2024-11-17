@@ -1,2 +1,4 @@
 aiogram==3.14.0
 requests==2.32.3
+webdriver-manager==4.0.2
+selenium==4.25.0

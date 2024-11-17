@@ -31,31 +31,31 @@ def get_player_rank(rank_tier):
         if rank_tier == 32:
             return rank + ' 2'
         if rank_tier == 33:
-            return rank + ' 3'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_3.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_3.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 34:
             return rank + ' 4'
         if rank_tier == 35:
-            return rank + ' 5'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_3.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_5.png" height="100%" width="100%"></image></svg>'
     if rank_tier >= 40:
         rank = 'Герой'
         if rank_tier == 41:
-            return rank + ' 1'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_4.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_1.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 42:
-            return rank + ' 2'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_4.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_2.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 43:
-            return rank + ' 3'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_4.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_3.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 44:
-            return rank + ' 4'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_4.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_4.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 45:
-            return rank + ' 5'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_4.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_5.png" height="100%" width="100%"></image></svg>'
     if rank_tier >= 50:
         rank = 'Легенда'
         if rank_tier == 51:
             return rank + ' 1'
         if rank_tier == 52:
-            return rank + ' 2'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_5.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_2.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 53:
-            return rank + ' 3'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_5.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_3.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 54:
             return rank + ' 4'
         if rank_tier == 55:
@@ -63,7 +63,7 @@ def get_player_rank(rank_tier):
     if rank_tier >= 60:
         rank = 'Властелин'
         if rank_tier == 61:
-            return rank + ' 1'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_6.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_1.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 62:
             return rank + ' 2'
         if rank_tier == 63:
@@ -77,7 +77,7 @@ def get_player_rank(rank_tier):
         if rank_tier == 71:
             return rank + ' 1'
         if rank_tier == 72:
-            return rank + ' 2'
+            return '<svg viewBox="0 0 256 256" style="max-width: 256px; max-height: 256px; width: 52px; height: 52px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_7.png" height="100%" width="100%"></image><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/star_2.png" height="100%" width="100%"></image></svg>'
         if rank_tier == 73:
             return rank + ' 3'
         if rank_tier == 74:
