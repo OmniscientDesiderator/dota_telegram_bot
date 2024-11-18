@@ -13,7 +13,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")  
 chrome_options.add_argument("--remote-debugging-port=9222") 
 chrome_options.add_argument("--incognito") 
-chrome_options.add_argument("--disable-gpu")  
+# chrome_options.add_argument("--disable-gpu")  
 chrome_options.add_argument("--disable-software-rasterizer")  
 chrome_options.add_argument("--disable-extensions") 
 chrome_options.add_argument("--no-first-run")  
@@ -23,7 +23,7 @@ chrome_options.add_argument('--disable-cache')
 chrome_options.add_argument("--disable-web-security")
 
 # For Docker work chromedriver
-chrome_options.binary_location = "/usr/bin/google-chrome-stable"
+# chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 
 players = []
 bans = []
@@ -34,22 +34,12 @@ def truncate_name(name):
     return name
 
 def create_match_card(match_id, match_data):
-
-    images_dir = os.path.join('../app/images/')
-    print(f'массив: {len(match_data)}')
-
     match_duration = round(match_data["duration"] / 60)
-    match_winner = ''
-    if(match_data['radiant_win']):
-         match_winner = 'Победа сил света'
-    else:
-        match_winner = 'Победа сил тьмы'
 
     for item in match_data['players']:
         personaname = item.get('personaname')
         if personaname is None:
             item['personaname'] = "Private acc"
-
         player = {
             'personaname': personaname,
             'hero': item['hero_id'],
@@ -67,11 +57,6 @@ def create_match_card(match_id, match_data):
     #     if not item['is_pick']:
     #         ban = {'hero': item['hero_id'], 'team': item['team']}
     #         bans.append(ban)
-
-    if not os.path.exists(images_dir):
-        os.makedirs(images_dir)
-
-    output_path = os.path.join(images_dir, f'{match_id}.png')
 
     html = f"""
     <!DOCTYPE html>
@@ -288,6 +273,12 @@ def create_match_card(match_id, match_data):
     </body>
     </html>
     """ 
+
+    images_dir = os.path.join('../app/images/')
+    if not os.path.exists(images_dir):
+        os.makedirs(images_dir)
+
+    output_path = os.path.join(images_dir, f'{match_id}.png')
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     driver.get("data:text/html;charset=utf-8," + html)

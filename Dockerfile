@@ -1,4 +1,4 @@
-FROM python:3.13.0-slim-bullseye
+FROM --platform=linux/amd64 python:3.13.0-slim-bullseye
 
 RUN apt-get update && apt-get install -y \
     wget \

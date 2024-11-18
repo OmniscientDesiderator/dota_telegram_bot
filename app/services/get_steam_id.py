@@ -1,6 +1,10 @@
 import requests
 import re
-from config import STEAM_TOKEN
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+STEAM_TOKEN = os.getenv("STEAM_TOKEN")
 
 def extract_steam_id(link):
     username_pattern = r'https://steamcommunity.com/id/([^/]+)/?'      

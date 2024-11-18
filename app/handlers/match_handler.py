@@ -1,11 +1,11 @@
+import os
 from aiogram import F, Router
 from aiogram.filters import Command
-from aiogram.types import Message
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 from keyboards.player_menu import MyCallback
+from aiogram.types import Message
 from aiogram.types import CallbackQuery
-import os
 from aiogram.types import FSInputFile
 
 from services.dota_api import get_match
@@ -39,8 +39,7 @@ async def search_match(message: Message, state: FSMContext):
             if not item['is_pick']:
                 ban = {'hero': item['hero_id'], 'team': item['team']}
                 bans.append(ban)
-        
-        
+
     create_match_card(data['matchId'], match_data)
 
     image_path = f'../app/images/{data['matchId']}.png'
@@ -51,7 +50,6 @@ async def search_match(message: Message, state: FSMContext):
     else:
         await message.answer('Пожалуйста введите ID матча.')
     os.remove(image_path)
-
             
 @router.callback_query(MyCallback.filter(F.foo == 'Баны'))
 async def player_heroes(callback: CallbackQuery, state: FSMContext):

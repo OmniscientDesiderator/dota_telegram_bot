@@ -1,20 +1,22 @@
+import os
+import logging
 from aiogram import F, Router
 from aiogram.filters import Command
-from aiogram.types import Message
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
-import logging
-from config import STEAM_TOKEN
+from aiogram.types import FSInputFile
+from aiogram.types import Message
 
 from keyboards.player_menu import MyCallback
 import keyboards.player_menu as kb
 
-from services.dota_api import get_player_info, get_recent_matches, get_win_lose, get_player_heroes
+from services.dota_api import get_player_info, get_recent_matches, get_player_heroes
 from services.ranks import get_player_rank
 from services.is_win import get_is_win
 from services.current_hero import get_current_hero
 from services.get_steam_id import extract_steam_id
+from services.player_card import create_player_card
 
 logging.basicConfig(level=logging.INFO)
 
@@ -41,25 +43,22 @@ async def search_player(message: Message, state: FSMContext):
 
     print(data['playerId'])
 
-
     steam_id = extract_steam_id(data['playerId'])
-
     id_int32 = int(steam_id) % (2**32)
 
     await state.update_data(playerId=id_int32)
 
     player_data = get_player_info(id_int32)
-    win_lose = get_win_lose(id_int32)
+    create_player_card(id_int32, player_data)
 
-    count_matches = win_lose['win'] + win_lose['lose']
-    winrate = round((win_lose['win'] * 100) / count_matches, 2)
-
-    rank = get_player_rank(player_data['rank_tier'])
-
-    await message.answer(f'Вы нашли игрока {player_data["profile"]["personaname"]} ({rank})\nВинрейт: {winrate}% ({win_lose['win']} - {win_lose['lose']})', 
-                    reply_markup=kb.get_pages())   
-
-
+    image_path = f'../app/images/{id_int32}.png'
+    if os.path.exists(image_path):
+        with open(image_path, 'rb'):
+            photo = FSInputFile(image_path)
+            await message.answer_photo(photo=photo, reply_markup=kb.get_pages())
+    else:
+        await message.answer('Пожалуйста введите ID матча.')
+    os.remove(image_path)
     
 @router.callback_query(MyCallback.filter(F.foo == 'Матчи'))
 async def player_matches(callback: CallbackQuery, state: FSMContext):
@@ -77,19 +76,3 @@ async def player_matches(callback: CallbackQuery, state: FSMContext):
 
     match_info_str = '\n\n'.join(match_info)
     await callback.message.answer(f'Последние матчи игрока:\n\n{match_info_str}')
-
-@router.callback_query(MyCallback.filter(F.foo == 'Герои'))
-async def player_heroes(callback: CallbackQuery, state: FSMContext):
-    data = await state.get_data()
-
-    heroes = get_player_heroes(data['playerId'])
-
-    hero_info = []
-
-    for hero in heroes[:5]:
-        winrate = round((hero['win'] * 100) / hero['games'], 2)
-        hero_name = get_current_hero(hero['hero_id'])
-        hero_info.append(f'{hero_name} — Матчей: {hero['games']} — % Винрейт: {winrate}%')
-    
-    hero_info_str = '\n\n'.join(hero_info)
-    await callback.message.answer(f'Сигнатурные герои игрока:\n\n{hero_info_str}')
