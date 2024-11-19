@@ -12,10 +12,9 @@ from keyboards.player_menu import MyCallback
 import keyboards.player_menu as kb
 
 from services.dota_api import get_player_info, get_recent_matches, get_player_heroes
-from services.ranks import get_player_rank
-from services.is_win import get_is_win
-from services.current_hero import get_current_hero
-from services.get_steam_id import extract_steam_id
+from utils.helpers import get_is_win
+from utils.helpers import get_current_hero
+from utils.helpers import extract_steam_id
 from services.player_card import create_player_card
 
 logging.basicConfig(level=logging.INFO)

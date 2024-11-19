@@ -9,7 +9,7 @@ from aiogram.types import CallbackQuery
 from aiogram.types import FSInputFile
 
 from services.dota_api import get_match
-from services.current_hero import get_current_hero
+from utils.helpers import get_current_hero
 from services.match_card import create_match_card
 
 from keyboards.match_menu import MyCallback

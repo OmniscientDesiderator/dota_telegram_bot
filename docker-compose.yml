@@ -5,4 +5,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
+      - DOTA_API_KEY=${DOTA_API_KEY}
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - "80:80"
     restart: always

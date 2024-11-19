@@ -24,7 +24,10 @@ RUN apt-get update && apt-get install -y \
     libxss1 \
     libdbus-1-3 \
     libgdk-pixbuf2.0-0 \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    tzdata \
+    && ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime \
+    && dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" | tee -a /etc/apt/sources.list.d/google-chrome.list \
@@ -39,7 +42,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV GOOGLE_CHROME_BIN=/usr/bin/google-chrome-stable
 ENV PATH="/usr/local/bin:$PATH"
 
-COPY /app /app
+COPY . /app
 
 WORKDIR /app
 

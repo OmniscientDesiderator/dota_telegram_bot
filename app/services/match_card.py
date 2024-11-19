@@ -4,8 +4,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager 
 
-from services.current_hero import get_hero_image
-from services.ranks import get_player_rank
+from utils.helpers import get_hero_image
+from utils.helpers import get_player_rank
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")  
@@ -25,15 +25,14 @@ chrome_options.add_argument("--disable-web-security")
 # For Docker work chromedriver
 # chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 
-players = []
-bans = []
-
 def truncate_name(name):
     if len(name) > 10:  
         return name[:10] + '...' 
     return name
 
 def create_match_card(match_id, match_data):
+    players = []
+    bans = []
     match_duration = round(match_data["duration"] / 60)
 
     for item in match_data['players']:
