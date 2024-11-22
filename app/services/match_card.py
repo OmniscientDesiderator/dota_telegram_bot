@@ -13,7 +13,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")  
 chrome_options.add_argument("--remote-debugging-port=9222") 
 chrome_options.add_argument("--incognito") 
-# chrome_options.add_argument("--disable-gpu")  
+chrome_options.add_argument("--disable-gpu")  
 chrome_options.add_argument("--disable-software-rasterizer")  
 chrome_options.add_argument("--disable-extensions") 
 chrome_options.add_argument("--no-first-run")  
@@ -51,11 +51,6 @@ def create_match_card(match_id, match_data):
             'start_time': item['start_time']       
             }
         players.append(player)
-
-    # for ban in match_data['picks_bans']:
-    #     if not item['is_pick']:
-    #         ban = {'hero': item['hero_id'], 'team': item['team']}
-    #         bans.append(ban)
 
     html = f"""
     <!DOCTYPE html>
@@ -249,7 +244,7 @@ def create_match_card(match_id, match_data):
                                         <span class="earnings-amount">{player['gold']}</span>
                                     </div>
                                     <div class="player-name">{truncate_name(str(player['personaname']))}</div>
-                                    <div class="player-rank">{get_player_rank(player['rank']) if player['rank'] is not None else "Без звания"}</div>
+                                    <div class="player-rank">{get_player_rank(player['rank']) if player['rank'] is not None else f"""<svg viewBox="0 0 256 256" width="48" height="48" style="max-width: 256px; max-height: 256px;"><image href="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_0.png" height="100%" width="100%"></image></svg>"""}</div>
                                 </div>""" for player in players[:5])}
                 </div>
                 <div class="vs">

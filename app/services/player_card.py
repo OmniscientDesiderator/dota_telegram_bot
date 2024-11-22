@@ -5,8 +5,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-from services.dota_api import get_win_lose, get_recent_matches
-from utils.helpers import get_hero_image, get_player_rank, get_is_win, get_match_duration, get_match_time
+from services.dota_api import get_win_lose, get_recent_matches, get_player_heroes
+from utils.helpers import get_hero_image, get_player_rank, get_is_win, get_match_duration, get_match_time, get_hero_winrate
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")  
@@ -14,7 +14,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")  
 chrome_options.add_argument("--remote-debugging-port=9222") 
 chrome_options.add_argument("--incognito") 
-# chrome_options.add_argument("--disable-gpu")  
+chrome_options.add_argument("--disable-gpu")  
 chrome_options.add_argument("--disable-software-rasterizer")  
 chrome_options.add_argument("--disable-extensions") 
 chrome_options.add_argument("--no-first-run")  
@@ -28,12 +28,22 @@ chrome_options.add_argument("--disable-web-security")
 
 def create_player_card(id_int32, player_data):
     matches_info = []
+    heroes_data = []
+    player_heroes = get_player_heroes(id_int32)
     win_lose = get_win_lose(id_int32)
 
     count_matches = win_lose['win'] + win_lose['lose']
-    winrate = round((win_lose['win'] * 100) / count_matches, 2)
 
     recent_matches = get_recent_matches(id_int32)
+
+    for hero in player_heroes:
+        hero_info = {
+            'hero_id': hero['hero_id'],
+            'games': hero['games'],
+            'win': hero['win'],
+            'last_played': hero['last_played']
+        }
+        heroes_data.append(hero_info)
 
     for match in recent_matches:
         is_win = get_is_win(match['radiant_win'], match['player_slot'])
@@ -88,15 +98,15 @@ def create_player_card(id_int32, player_data):
                 border-radius: 50%;
             }}
             .profile_rank {{
-                width: 75px;
+                width: 90px;
             }}
             .rank img {{
                 width: 40px;
             }}
             .matches {{
-                margin: 30px 60px;
+                margin: 18px 60px;
                 padding: 0 15px;
-                background-color: rgb(18, 17, 17);
+                background-color: rgb(18, 18, 18);
                 border-radius: 5px;
             }}
             .match {{
@@ -153,6 +163,20 @@ def create_player_card(id_int32, player_data):
             }}
             .match_time span {{
                 display: block;
+            }}     
+            .matches_count {{
+                display: flex;
+                justify-content: space-between;
+                gap: 16px
+            }}
+            .matches_win {{
+                color: rgb(42, 203, 79);
+            }}
+            .matches_lose {{
+                color: rgb(236, 4, 31);
+            }}
+            .matches_wl_title {{
+                font-weight: 300
             }}
             </style>
         </head>
@@ -165,6 +189,22 @@ def create_player_card(id_int32, player_data):
                 </div>
             </div>
             <div class="rank">
+                <div class="matches_count">
+                <div>
+                    <div>
+                        <span class="matches_win">{win_lose['win']}</span>
+                        -
+                        <span class="matches_lose">{win_lose['lose']}</span>
+                    </div>
+                    <div>
+                        <div class="matches_wl_title">Matches</div>
+                    </div>
+                </div>
+                <div>
+                    <span>{get_hero_winrate(count_matches, win_lose['win'])}%</span>
+                    <div class="matches_wl_title">Winrate</div>
+                </div>
+            </div>
                 {f"""
                 <div>
                     <img src="https://cdn.stratz.com/images/dota2/plus/logo.png" alt="dota_plus" />
@@ -173,6 +213,9 @@ def create_player_card(id_int32, player_data):
                     {get_player_rank(player_data['rank_tier'])}
                 </div>
             </div>
+        </div>
+        <div class="stats">
+            
         </div>
         <div class="matches">
             <h3>Матчи</h3>
@@ -189,17 +232,30 @@ def create_player_card(id_int32, player_data):
                     {get_player_rank(match['average_rank'])}
                     <div class="match_time">
                         <span>{get_match_duration(match['duration'])}</span>
-                        <span>{get_match_time(match['start_time'])} ч назад</span>
+                        <span>{get_match_time(match['start_time'])}</span>
                     </div>
                 </div>
             </div>
             """ for match in matches_info)}
-        </div>        
+        </div>   
+        <div class="matches">
+            <h3>Сигнатурки игрока</h3>
+            {''.join(f"""
+            <div class="match">
+                <div class="match_info">
+                    <img src="{get_hero_image(hero['hero_id'])}" alt="1" />
+                    <div>{get_hero_winrate(hero['games'], hero['win'])}%</div>
+                    <div>{hero['games']} игр</div>     
+                </div>
+                <div>
+                    <span>{get_match_time(hero['last_played'])}</span>
+                </div>
+            </div>
+            """ for hero in heroes_data[:5])}
+        </div>     
         </body>
     </hmtl> 
     """
-
-    #             {winrate}% / {count_matches}
 
     images_dir = os.path.join('../app/images/') 
     if not os.path.exists(images_dir):
@@ -208,7 +264,8 @@ def create_player_card(id_int32, player_data):
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     driver.get("data:text/html;charset=utf-8," + html)
-    driver.set_window_size(2120, 1080)
-    time.sleep(5)
+    # driver.set_window_size(2120, 1180)
+    driver.set_window_size(1120, 1180)
+    time.sleep(10)
     driver.save_screenshot(output_path)
     driver.quit()

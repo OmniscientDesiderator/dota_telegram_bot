@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     environment:
       - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
-      - DOTA_API_KEY=${DOTA_API_KEY}
+      - STEAM_TOKEN=${STEAM_TOKEN}
     volumes:
       - ./app:/app
     env_file:

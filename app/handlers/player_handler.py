@@ -8,12 +8,7 @@ from aiogram.types import CallbackQuery
 from aiogram.types import FSInputFile
 from aiogram.types import Message
 
-from keyboards.player_menu import MyCallback
-import keyboards.player_menu as kb
-
 from services.dota_api import get_player_info, get_recent_matches, get_player_heroes
-from utils.helpers import get_is_win
-from utils.helpers import get_current_hero
 from utils.helpers import extract_steam_id
 from services.player_card import create_player_card
 
@@ -54,24 +49,7 @@ async def search_player(message: Message, state: FSMContext):
     if os.path.exists(image_path):
         with open(image_path, 'rb'):
             photo = FSInputFile(image_path)
-            await message.answer_photo(photo=photo, reply_markup=kb.get_pages())
+            await message.answer_photo(photo=photo)
     else:
         await message.answer('Пожалуйста введите ID матча.')
     os.remove(image_path)
-    
-@router.callback_query(MyCallback.filter(F.foo == 'Матчи'))
-async def player_matches(callback: CallbackQuery, state: FSMContext):
-    data = await state.get_data()
-
-    recent_matches = get_recent_matches(data['playerId'])
-
-    match_info = []
-
-    for match in recent_matches:
-        current_hero = get_current_hero(match['hero_id'])
-        is_win = get_is_win(match['radiant_win'], match['player_slot'])
-        match_duration = round(match["duration"] / 60)
-        match_info.append(f'{is_win} — {match_duration} минут — Герой: {current_hero} — Счет: {match["kills"]}/{match["deaths"]}/{match["assists"]}')
-
-    match_info_str = '\n\n'.join(match_info)
-    await callback.message.answer(f'Последние матчи игрока:\n\n{match_info_str}')
